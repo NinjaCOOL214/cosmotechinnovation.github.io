@@ -1,0 +1,668 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Travel the Space!</title>
+    <style>
+
+
+        .back-video{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .scrollable-text{
+            max-height: 200px;
+            overflow: auto;
+        }
+        
+        .page-footer {
+            background-color: rgba(0, 0, 0, 0); /* Adjust the last value (0.5) for transparency level */
+        }
+
+        /* .container .row img{
+            max-width: 40%; 
+            width: 500px;
+            height: 300px;
+        } */
+
+        .latest-news {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* You can adjust the height as needed */
+            font-style: oblique;
+        }
+
+
+        .scrollable-text{
+            color: #fff;
+            padding: 20px;
+        }
+
+        .scrollable-text h2{
+            font-size: 30px;
+        }
+
+        .hero .text h1 {
+            color: #fff;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 50px; 
+        }
+        
+        .hero .text{
+            justify-content: left;
+            text-align: left;
+            max-width: 1000px;
+            margin-left: 100px;
+            font-family: 'Orbitron', sans-serif;
+        } 
+
+        .latest-news .row h1{
+            z-index: 1;
+            color: #fff;
+            font-size: 60px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Destination {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px; 
+            font-style: oblique;
+        }
+
+        .Destination{
+            color: #fff;
+        }
+
+        /* .brand-logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        } */
+
+        .brand-logo img{
+            max-height: 60px;
+        }
+
+        /* .brand-logo .brand-text {
+            margin-left: 10px; 
+            color: #ffffff; 
+            font-size: 20px; 
+        } */
+
+        .novaris{
+            display: flex;
+            height: 80px;
+            font-size: 80px;
+        }
+
+        .Ships {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* You can adjust the height as needed */
+            font-style: oblique;
+        }
+
+        .page-footer .tooltipped.btn-floating.btn-small {
+            background-color: transparent; 
+            box-shadow: none; 
+            border: none; 
+        }
+
+        .page-footer .tooltipped.btn-floating i {
+            font-size: 30px; 
+        }
+        /* .CosmoTech-Voyager{
+            display: flex;
+            height: 80px;
+            font-size: 60px;
+            
+        } */
+
+        .CosmoTech{
+                font-family: 'Orbitron', sans-serif;
+        }
+
+        .container .row{
+                font-family: 'Orbitron', sans-serif;
+        }
+        
+
+        @media screen and (max-width: 670px){
+            header{
+                min-height: 1000px;
+            }
+
+                .hero .text {
+                    text-align: left; /* Center-align text on small screens */
+                    margin-left: 0;
+                    font-family: 'Orbitron', sans-serif;
+            }
+
+                .hero .text h1 {
+                    font-size: 30px; /* Reduce font size for smaller screens */
+                    text-align: left;
+            }
+
+                .hero .text h3 {
+                    font-size: 20px; /* Adjust font size for subheading */
+                    left: 10px;
+            }
+
+                .hero .text p {
+                    font-size: 16px; /* Adjust font size for paragraph text */
+                    padding: 0 10px; /* Add some padding for better readability */
+            }
+                .brand-logo {
+                    text-align: center; /* Center-align content on small screens */
+            }
+
+                .logo-image {
+                    max-width: 80px; /* Adjust the logo size for small screens */
+            }
+
+                .logo-text {
+                    font-size: 16px; /* Adjust font size for the text */
+                    margin-top: 5px; /* Add spacing between logo and text */
+            }
+
+            .Container .CosmoTech{
+                transform: translateY(-10%);
+            } 
+
+            .container .row{
+                font-family: 'Orbitron', sans-serif;
+            }
+            .CosmoTech{
+                font-family: 'Orbitron', sans-serif;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav class="nav-wrapper grey darken-3">
+            <div class="container">
+                <div class="brand-logo">
+                    <a class="CosmoTech" style="white-space: nowrap; font-size: 20px !important;" >CosmoTech Innovation</a>
+                </div>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                    <!-- scrollspy href photo,services,id  -->
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#News">News</a></li>
+                    <li><a href="#Destination">Destination</a></li>
+                    <li><a href="#Ships">Ships</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    
+                    
+                </ul>
+                <!-- Mobile Menu -->
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#News">News</a></li>
+                    <li><a href="#Destination">Destination</a></li>
+                    <li><a href="#Ships">Ships</a></li>
+                    <li><a href="#Contact">Contac</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="VIDEO/Video.mp4" type="video/mp4">
+            </video>
+            <div class="text white-text col s12 l6 right-align">
+                <h1><strong>Never Stop</strong></h1>
+                <h3>Exploring the Space</h3>
+                <br>
+                <p>Outer space is a vast and largely unexplored frontier filled with mysteries waiting to be uncovered. Exploring space allows us to gain a deeper understanding of the universe, its origins, and the fundamental laws that govern it. Many scientific breakthroughs and discoveries have resulted from space exploration, including advancements in astrophysics, cosmology, and planetary science.</p>
+            </div>
+        </div>
+    </header>
+<!-- photo / grid / add scrollspy -->
+    <div class="latest-news scrollspy" id="News">
+        <div class="row">
+            <h1>Latest News</h1>
+        </div>
+    </div>
+    <section class="container section" >
+        <div class="row">
+            <div class="col s12 l6">
+                <img src="IMG/Spaceship3.jpg" alt="" class="responsive-IMG materialboxed">
+            </div>
+            <div class="col s12 l6 scrollable-text">
+                <h2 class="white-text"><p><Strong>"Cosmosun One: Humanity's Marvelous Spacestation Sets New Horizon with Lightspeed Connectivity!"</Strong></p></h2>
+                <p class="white-text">
+                <br>
+                <p>• In an astonishing feat of human achievement, the construction of Cosmosun One, a state-of-the-art spacestation located at the edge of our solar system, has been completed, marking a pivotal moment in our journey toward interstellar exploration, all made possible by lightspeed connectivity.</p>
+                <br>
+                <p>• Cosmosun One, a monumental undertaking jointly funded and executed by a consortium of leading space agencies and corporations from around the world, is a testament to the boundless potential of human ingenuity, scientific collaboration, and technological advancement. Orbiting the heliopause, the boundary between our solar system and the cosmos beyond, this spacestation is set to revolutionize space exploration and our understanding of the universe.</p>
+                <br>
+                <p><strong>Lightspeed Connectivity: A Quantum Leap in Space Communication</strong></p>
+                <br>
+                <p>• One of the defining features of Cosmosun One is its lightspeed communication system, a groundbreaking technology that enables instantaneous data transmission across vast cosmic distances. This revolutionary achievement in communication technology has effectively eliminated the time delays that once hindered real-time interactions with deep space missions, offering unprecedented possibilities for interstellar collaboration and research.</p>
+                <br>
+                <p>• Dr. Maria Hernandez, the lead scientist behind the lightspeed communication breakthrough, expressed her excitement: "With lightspeed connectivity, we can now explore the farthest reaches of the universe as if they were in our own backyard. It's a game-changer for space research, enabling us to gather data and conduct experiments in real time, fostering global cooperation on a cosmic scale."</p>
+                <br>
+                <p><strong>Cosmosun One: A Hub of Cosmic Exploration and Discovery</strong></p>
+                <br>
+                <p>• Cosmosun One is equipped with state-of-the-art laboratories, living quarters, and advanced research facilities. Its advanced propulsion system allows it to reposition itself strategically to study various celestial phenomena, from the outer reaches of the Kuiper Belt to the mysteries of the Oort Cloud.</p>
+                <br>
+                <p>• The station's crew comprises a diverse team of scientists, engineers, and explorers who will conduct groundbreaking research on the origin of cosmic rays, the behavior of interstellar particles, and the interactions between our solar system and the interstellar medium. They will also serve as a vital point of contact for future interstellar missions, facilitating instant communication between Earth and distant spacecraft.</p>
+                <br>
+                <p><strong>The Next Cosmic Frontier: Lightspeed Exploration</strong></p>
+                <br>
+                <p>• Cosmosun One symbolizes a profound shift in humanity's cosmic ambitions. It stands as a testament to our unwavering commitment to exploration and discovery, and a bridge that connects us to the mysteries of the universe. With lightspeed connectivity, we have unlocked the potential to explore distant galaxies, making the dream of interstellar travel a reality.</p>
+                <br>
+                <p>• As Cosmosun One embarks on its mission to unveil the secrets of the cosmos, humanity stands united, ready to embrace the limitless possibilities of lightspeed exploration. We look to the stars with hope and anticipation, knowing that the universe is now within our reach as never before.</p>
+                <br>
+                <p>• The construction and launch of Cosmosun One serve as a reminder that, as a species, we are bound not by the limitations of our planet but by the endless expanse of the cosmos. Together, we are pioneers in a new era of lightspeed exploration, poised to unveil the wonders of the universe and chart a course toward an interstellar future.</p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l6 push-l6">
+                <img src="IMG/Spaceship2.jpg" alt="" class="responsive-IMG materialboxed">
+            </div>
+            <div class="col s12 l6 scrollable-text pull-l6">
+                <h2 class="white-text"><p><strong>"CosmoTech Innovations Unveils 'AstraNova' - The Pinnacle of Interstellar Engineering!"</strong></p></h2>
+                <p class="white-text">
+                    <br>
+                    <p>In a momentous leap forward for human engineering and exploration, CosmoTech Innovations has proudly unveiled "AstraNova," a spaceship of unparalleled sophistication and capability, setting new standards for interstellar travel and discovery.</p>
+                    <br>
+                    <p><strong>AstraNova: A Masterpiece of Cosmic Engineering:</strong></p>
+                    <br>
+                    <p>AstraNova, the brainchild of CosmoTech Innovations, is a testament to the relentless pursuit of excellence in space technology. It represents the culmination of decades of research, innovation, and collaboration among the world's finest scientists, engineers, and space visionaries.</p>
+                    <br>
+                    <p>This marvel of interstellar engineering boasts an array of groundbreaking features:</p>
+                    <br>
+                    <p><strong>• Lightspeed Propulsion:</strong> AstraNova is equipped with an advanced lightspeed propulsion system, allowing it to traverse cosmic distances at a velocity that once existed only in science fiction. With lightspeed capabilities, it can reach distant galaxies, explore uncharted star systems, and conduct real-time research on cosmic phenomena.</p>
+                    <br>
+                    <p><strong>• Sustainable Energy: </strong>AstraNova harnesses the power of sustainable energy sources, such as advanced fusion reactors and solar sails, ensuring a nearly limitless supply of energy for long-duration missions. This innovation aligns with CosmoTech's commitment to environmental stewardship.</p>
+                    <br>
+                    <p><strong>• Self-Sustaining Ecosystem: </strong>The spaceship features a closed-loop, self-sustaining ecosystem that can support long-term missions and human colonization efforts. It recycles resources, generates oxygen, and produces food, creating a comfortable and habitable environment for astronauts on board.</p>
+                    <br>
+                    <p><strong>• Advanced Scientific Instruments: </strong>AstraNova is equipped with a suite of cutting-edge scientific instruments, enabling the study of cosmic phenomena, extraterrestrial life, and the mysteries of the universe. Its laboratories are capable of conducting experiments at unprecedented levels of precision.</p>
+                    <br>
+                    <p><strong>• Artificial Intelligence (AI): </strong>The spaceship is guided by a highly advanced artificial intelligence system that enhances navigation, communication, and decision-making. It can adapt to unforeseen challenges, making AstraNova a reliable and adaptable explorer.</p>
+                    <br>
+                    <p><Strong>The Future of Cosmic Exploration</Strong></p>
+                    <br>
+                    <p>AstraNova revolutionizes cosmic exploration with its cutting-edge technology, sustainability, and lightspeed capabilities, humanity is poised to embark on a new era of interstellar exploration. The ship promises to unlock the secrets of distant star systems, study exotic celestial bodies, and bring us closer to answering some of the universe's most profound questions. Dr. Jonathan Mercer, founder of CosmoTech Innovations, sees it as the embodiment of human curiosity and our path to a multiplanetary future. Join us on AstraNova's voyage to unlock the universe's secrets.</p>
+            </div>
+        </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="IMG/ParallaxGalaxy1.jpg" alt="" class="responsive-IMG">
+        </div>
+    </div>
+    <!-- continuation -->
+    <div class="Destination scrollspy" id="Destination">
+        <div class="row">
+            <h1>Destination</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 s12 l4 offset-l3">
+            <div class="novaris">
+                <h2 class="white-text">Novaris</h2>
+            </div>
+        </div>
+    </div>
+    <section class="container section">
+        <div class="row">
+            <div class="col s12 l6">
+                <img src="IMG/Destination1.jpg" alt="" class="responsive-IMG materialboxed">
+            </div>
+            <div class="col s12 l6 scrollable-text">
+                <h2 class="white-text"><p><Strong>"The Epic Discovery of Novaris: Humanity's New Home Among the Stars"</Strong></p></h2>
+                <p class="white-text">
+                    <br>
+                    <p>In the not-so-distant future...</p>
+                    <br>
+                    <p> In the year 2058, the world held its collective breath as the culmination of years of scientific exploration and technological innovation led to an unprecedented discovery by CosmoTech Innovations—a super-Earth dubbed "Novaris."</p>
+                    <br>
+                    <p><strong>The Visionary Explorer: Dr. Elena Rodriguez</strong></p>
+                    <br>
+                    <p> The credit for this extraordinary discovery goes to the brilliant astrophysicist Dr. Elena Rodriguez, a tireless explorer who had dedicated her life to unraveling the mysteries of the cosmos. Leading a team of pioneering scientists at CosmoTech, Dr. Rodriguez had always been drawn to the tantalizing possibility of finding habitable planets beyond our solar system.</p>
+                    <br>
+                    <p>After years of meticulous observations and data analysis, Dr. Rodriguez's breakthrough moment arrived when her team's deep-space telescopes captured the telltale signs of Novaris. Its distinct orbital patterns, chemical signatures, and the elusive "habitable zone" indicators pointed to a super-Earth with conditions remarkably similar to Earth's.</p>
+                    <br>
+                    <p><strong>The Momentous Announcement</strong></p>
+                    <br>
+                    <p> In a historic press conference on July 7, 2058, Dr. Elena Rodriguez unveiled the discovery of Novaris to the world. The announcement sent shockwaves through the global scientific community and ignited a sense of hope and wonder among people worldwide.</p>
+                    <br>
+                    <p><strong>Preparation and Expedition: The Journey to Novaris</strong></p>
+                    <br>
+                    <p>The years that followed were a whirlwind of preparation, collaboration, and scientific innovation. Governments, space agencies, and the private sector rallied around the cause of exploring Novaris, recognizing it as humanity's best hope for a new home among the stars.</p>
+                    <br>
+                    <p>In 2065, the "Novaris Initiative" was launched, a multinational effort that brought together the brightest minds in aerospace engineering, sustainable living, and interstellar travel. CosmoTech's expertise in lightspeed propulsion technology played a pivotal role in the success of the initiative.</p>
+                    <br>
+                    <p>Finally, in 2075, the momentous day arrived. The starship "Stellar Endeavor" set off on its historic voyage to Novaris. Manned by a diverse crew of scientists, engineers, and explorers, the ship carried with it the hopes and dreams of humanity, embarking on a journey that would take nearly a decade.</p>
+                    <br>
+                    <p><strong>Novaris: A Paradise Beyond Imagination</strong></p>
+                    <br>
+                    <p>Upon arrival at Novaris, the Stellar Endeavor's crew found a planet of breathtaking beauty and abundance. Novaris boasted lush, temperate forests, pristine lakes, and fertile plains, along with a stable climate conducive to human habitation. Its atmosphere, rich in oxygen, supported terrestrial plant and animal life.</p>
+                    <br>
+                    <p>But the true marvel of Novaris was its intricate biodiversity. Unique flora and fauna thrived, and scientists marveled at the interconnected ecosystems that had evolved on the super-Earth. The planet's geology hinted at a wealth of natural resources, while its oceans teemed with aquatic life.</p>
+                    <br>
+                    <p>With the establishment of the first human settlement, "Novara Prime," in 2087, the dream of a new home among the stars became a reality. Novaris offered not only a hospitable environment but also sustainable energy sources and advanced terraforming potential, making it an ideal candidate for human colonization.</p>
+                    <br>
+                    <p>As the population of Novara Prime grew and thriving colonies spread across the planet, humanity had finally found a new hope—a sanctuary among the stars, thanks to the vision, dedication, and pioneering spirit of Dr. Elena Rodriguez and the collective efforts of CosmoTech Innovations and the global scientific community. Novaris was not just a super-Earth; it was the promise of a brighter future for all of humanity, forever etched in the annals of history.</p>
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col s12 s12 l4 offset-l7">
+            <div class="edenaris">
+                <h2 class="white-text">Edenaris</h2>
+            </div>
+        </div>
+    </div>
+    <section class="container section">
+        <div class="row">
+            <div class="col s12 l6 push-l6">
+                <img src="IMG/Destination2.jpg" alt="" class="responsive-IMG materialboxed">
+            </div>
+            <div class="col s12 l6 scrollable-text pull-l6">
+                <h2 class="white-text"><p><Strong>"The Epic Discovery of Novaris: Humanity's New Home Among the Stars"</Strong></p></h2>
+                <p class="white-text">
+                    <br>
+                    <p>In the not-so-distant future...</p>
+                    <br>
+                    <p> In the year 2058, the world held its collective breath as the culmination of years of scientific exploration and technological innovation led to an unprecedented discovery by CosmoTech Innovations—a super-Earth dubbed "Novaris."</p>
+                    <br>
+                    <p><strong>The Visionary Explorer: Dr. Elena Rodriguez</strong></p>
+                    <br>
+                    <p> The credit for this extraordinary discovery goes to the brilliant astrophysicist Dr. Elena Rodriguez, a tireless explorer who had dedicated her life to unraveling the mysteries of the cosmos. Leading a team of pioneering scientists at CosmoTech, Dr. Rodriguez had always been drawn to the tantalizing possibility of finding habitable planets beyond our solar system.</p>
+                    <br>
+                    <p>After years of meticulous observations and data analysis, Dr. Rodriguez's breakthrough moment arrived when her team's deep-space telescopes captured the telltale signs of Novaris. Its distinct orbital patterns, chemical signatures, and the elusive "habitable zone" indicators pointed to a super-Earth with conditions remarkably similar to Earth's.</p>
+                    <br>
+                    <p><strong>The Momentous Announcement</strong></p>
+                    <br>
+                    <p> In a historic press conference on July 7, 2058, Dr. Elena Rodriguez unveiled the discovery of Novaris to the world. The announcement sent shockwaves through the global scientific community and ignited a sense of hope and wonder among people worldwide.</p>
+                    <br>
+                    <p><strong>Preparation and Expedition: The Journey to Novaris</strong></p>
+                    <br>
+                    <p>The years that followed were a whirlwind of preparation, collaboration, and scientific innovation. Governments, space agencies, and the private sector rallied around the cause of exploring Novaris, recognizing it as humanity's best hope for a new home among the stars.</p>
+                    <br>
+                    <p>In 2065, the "Novaris Initiative" was launched, a multinational effort that brought together the brightest minds in aerospace engineering, sustainable living, and interstellar travel. CosmoTech's expertise in lightspeed propulsion technology played a pivotal role in the success of the initiative.</p>
+                    <br>
+                    <p>Finally, in 2075, the momentous day arrived. The starship "Stellar Endeavor" set off on its historic voyage to Novaris. Manned by a diverse crew of scientists, engineers, and explorers, the ship carried with it the hopes and dreams of humanity, embarking on a journey that would take nearly a decade.</p>
+                    <br>
+                    <p><strong>Novaris: A Paradise Beyond Imagination</strong></p>
+                    <br>
+                    <p>Upon arrival at Novaris, the Stellar Endeavor's crew found a planet of breathtaking beauty and abundance. Novaris boasted lush, temperate forests, pristine lakes, and fertile plains, along with a stable climate conducive to human habitation. Its atmosphere, rich in oxygen, supported terrestrial plant and animal life.</p>
+                    <br>
+                    <p>But the true marvel of Novaris was its intricate biodiversity. Unique flora and fauna thrived, and scientists marveled at the interconnected ecosystems that had evolved on the super-Earth. The planet's geology hinted at a wealth of natural resources, while its oceans teemed with aquatic life.</p>
+                    <br>
+                    <p>With the establishment of the first human settlement, "Novara Prime," in 2087, the dream of a new home among the stars became a reality. Novaris offered not only a hospitable environment but also sustainable energy sources and advanced terraforming potential, making it an ideal candidate for human colonization.</p>
+                    <br>
+                    <p>As the population of Novara Prime grew and thriving colonies spread across the planet, humanity had finally found a new hope—a sanctuary among the stars, thanks to the vision, dedication, and pioneering spirit of Dr. Elena Rodriguez and the collective efforts of CosmoTech Innovations and the global scientific community. Novaris was not just a super-Earth; it was the promise of a brighter future for all of humanity, forever etched in the annals of history.</p>
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col s12 s12 l4 offset-l3">
+            <div class="novaris">
+                <h2 class="white-text">Aquanova</h2>
+            </div>
+        </div>
+    </div>
+    <section class="container section">
+        <div class="row">
+            <div class="col s12 l6">
+                <img src="IMG/Destination3.jpg" alt="" class="responsive-IMG materialboxed">
+            </div>
+            <div class="col s12 l6 scrollable-text">
+                <h2 class="white-text"><p><strong>"Aquanova: The Liquid Miracle - CosmoTech's Astonishing Revelation"</strong></p></h2>
+                <p class="white-text">
+                    <br>
+                <p>In the year 2076...</p>
+                <br>
+                <p>The annals of cosmic exploration were forever rewritten with the extraordinary discovery of Aquanova, a planet devoid of land and entirely covered in water, unveiled to the world by CosmoTech Innovations—a revelation that would revolutionize our understanding of habitable worlds and aquatic colonization.</p>
+                <br>
+                <p>The Visionary Pathfinder: Dr. Sheena Caritativo</p>
+                <br>
+                <p>The incredible journey to Aquanova was spearheaded by the brilliant explorer Dr. Sheena Caritativo, a renowned oceanographer and astrobiologist at CosmoTech Innovations. Dr. Caritativo had always harbored a fascination with the boundless mysteries of the deep seas on Earth and possessed an unwavering belief in the potential for life beyond our home planet.</p>
+                <br>
+                <p>Years of tireless research, rigorous data analysis, and relentless pursuit of answers led Dr. Caritativo and her dedicated team to a remarkable revelation—a distant star system harbored a planet completely engulfed by water. It was Aquanova, a world submerged in endless aquatic wonder.</p>
+                <br>
+                <p><strong>The Astonishing Unveiling of Aquanova</strong></p>
+                <br>
+                <p>In a historic announcement on a radiant day in June 2076, Dr. Amelia Stone stood before a captivated global audience to introduce the world to Aquanova. Her presentation unveiled a planet that defied all conventions—a sprawling, crystalline ocean that stretched unbroken from pole to pole, with no visible land in sight.</p>
+                <br>
+                <p>Aquanova's ocean, pristine and teeming with life, was illuminated by bioluminescent organisms and hosted an array of intricate ecosystems. Its atmosphere held breathable oxygen, hinting at the planet's potential for aquatic colonization. The news of Aquanova's discovery ignited a fervor of curiosity and ambition across the world.</p>
+                <br>
+                <p><strong>The Aquanova Expedition: A Subaqueous Odyssey Begins</strong></p>
+                <br>
+                <p>In 2082, inspired by the promise of Aquanova, an international consortium of scientists, engineers, and aquatic pioneers launched the "Aquanova Expedition." Their mission was clear: explore, study, and eventually establish a sustainable underwater colony on this extraordinary waterworld.</p>
+                <br>
+                <p>CosmoTech Innovations played a pivotal role in the development of the cutting-edge underwater vessel, "AquaPioneer," designed for underwater habitation and exploration. The vessel was equipped with advanced technologies for underwater agriculture, energy generation, and environmental monitoring.</p>
+                <br>
+                <p><strong>Aquanova: The Watery Eden</strong></p>
+                <br>
+                <p>In 2088, the AquaPioneer embarked on its maiden voyage to Aquanova's submerged surface. The explorers were greeted by a world that defied terrestrial imagination. Aquanova's ocean was a mesmerizing tapestry, adorned with vibrant coral reefs, bioluminescent gardens, and schools of iridescent aquatic life that moved in orchestrated harmony.</p>
+                <br>
+                <p>The aquatic ecosystems were astonishingly diverse, with countless species uniquely adapted to life in this subaqueous realm. From colossal filter-feeding creatures to translucent, deep-sea denizens, Aquanova was a treasure trove of scientific marvels.</p>
+                <br>
+                <p>As the first underwater colony, "AquaHaven," was established in 2093, humanity had embarked on a historic odyssey of underwater exploration and discovery. Aquanova offered an opportunity to study unique marine life, harness underwater resources, and develop pioneering technologies for sustainable aquatic living.</p>
+                <br>
+                <p><strong>A New Epoch of Aquatic Exploration</strong></p>
+                <br>
+                <p>The history of Aquanova, inspired by the vision of Dr. Sheena Caritativo and the pioneering efforts of CosmoTech Innovations, stood as a testament to human ingenuity and our unrelenting quest for knowledge. It proved that even in the depths of a water-covered world, humanity could flourish, innovate, and uncover the mysteries of the subaqueous realm in ways never before imagined. Aquanova became a symbol of our boundless curiosity and our indomitable spirit to adapt and thrive in the most extraordinary of environments.</p>
+            </div>
+        </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="IMG/ParallaxSpaceship1.jpg" alt="" class="responsive-IMG">
+        </div>
+    </div>
+    <!-- continuation -->
+    <div class="Ships scrollspy" id="Ships">
+        <div class="row">
+            <h1 class="white-text">Ships</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l4 push-l4">
+            <div class="CosmoTech-Voyager" style="white-space: nowrap; font-size: 18px !important;">
+                <h2 class="white-text ">Voyager</h2>
+            </div>
+        </div>
+    </div>
+    <section class="container section ">
+        <div class="row">
+            <div class="col s12 l6">
+                <img src="IMG/ship1.jpg" alt="" class="responsive-IMG materialboxed">
+            </div>
+            <div class="col s12 l6 scrollable-text">
+                <h2 class="white-text"><p><strong>Introducing the CosmoTech Shuttle: Your Cosmic Companion</strong></p></h2>
+                <p class="white-text">
+                    <br>
+                <p>In the vast expanse of the cosmos, where the boundaries between stars and dreams blur, there's a dependable cosmic companion—the <strong>CosmoTech Voyager.</strong> Born from the innovative heart of CosmoTech Innovations, this small yet mighty transport ship is rewriting the rules of interstellar travel.</p>
+                <br>
+                <p>While the universe unfurls its mysteries, the CosmoTech Voyager offers you an affordable and high-performance vessel to navigate the stars. It's more than a spaceship; it's your ticket to the galaxies.</p>
+                <br>
+                <p><strong>Affordable Exploration</strong></p>
+                <br>
+                <p>CosmoTech Innovations understands that the desire to explore the cosmos knows no bounds, and neither should your budget. That's why we've engineered the CosmoTech Voyager to be not just efficient but cost-effective. Now, your cosmic adventures can be as limitless as the galaxies themselves.</p>
+                <br>
+                <p>CosmoTech Innovations understands that the desire to explore the cosmos knows no bounds, and neither should your budget. That's why we've engineered the CosmoTech Voyager to be not just efficient but cost-effective. Now, your cosmic adventures can be as limitless as the galaxies themselves.</p>
+                <br>
+                <p><strong>Unparalleled Performance</strong></p>
+                <br>
+                <p>Size may not always matter, but performance certainly does. The CosmoTech Voyager punches above its weight class with state-of-the-art propulsion, navigation, and safety systems. It's your trusty steed through asteroid fields, cosmic storms, and distant nebulae.</p>
+                <br>
+                <p><strong>Cosmic Versatility</strong></p>
+                <br>
+                <p>Whether you're a seasoned spacefarer or a novice stargazer, the CosmoTech Voyager adapts to your needs. From interstellar commutes to planetary expeditions, it's the versatile companion that can handle it all. With its modular design, you can customize it to suit your cosmic quests.</p>
+                <br>
+                <p><strong>Join the CosmoTech Journey</strong></p>
+                <br>
+                <p>As you embark on your celestial voyage, remember that you're not alone. CosmoTech Innovations is with you every step of the way, pushing the boundaries of space exploration and innovation. And our trusted CosmoTech Voyager is your cosmic chariot, ready to carry your dreams to the stars.</p>
+                <br>
+                <p>So, whether you're a seasoned explorer or a starry-eyed dreamer, embrace the cosmos with the CosmoTech Voyager—your cosmic companion on this extraordinary journey among the stars.</p>
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col s12 l4 push-l4">
+            <div class="CosmoTech-Voyager" style="white-space: nowrap; font-size: 18px !important;">
+                <h2 class="white-text ">Explorer</h2>
+            </div>
+        </div>
+    </div>
+    <section class="container section ">
+        <div class="row">
+            <div class="col s12 l6 push-l6">
+                <img src="IMG/ship2.jpg" alt="" class="responsive-IMG materialboxed">
+            </div>
+            <div class="col s12 l6 scrollable-text pull-l6">
+                <h2 class="white-text"><p><strong>Unveiling the CosmoTech Explorer: Your Cosmic Pathfinder</strong></p></h2>
+                <p class="white-text">
+                    <br>
+                    In the boundless tapestry of the universe, where the stars ignite our dreams, we present your key to the cosmos—the <strong>CosmoTech Explorer.</strong> Crafted with ingenuity by CosmoTech Innovations, this nimble transport ship is poised to redefine your interstellar journey.
+                    <br>
+                    <p>As we traverse the mysteries of the cosmos, the CosmoTech Explorer is your reliable companion, offering affordability without compromising on performance. It's not just a spacecraft; it's your gateway to the stars.</p>
+                    <br>
+                    <p><strong>Affordable Galactic Odyssey</strong></p>
+                    <br>
+                    <p>At CosmoTech Innovations, we recognize that the yearning for cosmic exploration transcends budgets. The CosmoTech Explorer is our answer, designed to be not only efficient but also remarkably budget-friendly. Now, the grandeur of the galaxy is within your reach.</p>
+                    <br>
+                    <p><strong>Peerless Cosmic Prowess</strong></p>
+                    <br>
+                    <p>While compact in size, the CosmoTech Explorer packs a celestial punch with cutting-edge propulsion, navigation, and safety systems. It's your steadfast ally through asteroid fields, celestial storms, and enigmatic nebulae.</p>
+                    <br>
+                    <p><strong>Cosmic Adaptability</strong></p>
+                    <br>
+                    <p>Whether you're an intrepid spacefarer or an aspiring stargazer, the CosmoTech Explorer adapts to your cosmic ambitions. From interstellar jaunts to planetary escapades, it's the versatile partner ready to tackle any cosmic quest. With a modular design, you can customize it to suit your voyage's demands.</p>
+                    <br>
+                    <p><strong>Join the CosmoTech Constellation</strong></p>
+                    <br>
+                    <p>As you embark on your cosmic odyssey, remember that you're part of the CosmoTech Constellation. We're at the forefront of space exploration and innovation, and the <strong>CosmoTech Explorer</strong> is your cosmic chariot, propelling your dreams among the stars.</p>
+                    <br>
+                    <p>So, whether you're an experienced voyager or a starry-eyed dreamer, seize the cosmos with the CosmoTech Explorer—your cosmic pathfinder on this extraordinary journey through the celestial expanse.</p>
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col s12 l4 push-l4">
+            <div class="CosmoTech-Voyager" style="white-space: nowrap; font-size: 18px !important;">
+                <h2 class="white-text ">Warbird</h2>
+            </div>
+        </div>
+    </div>
+    <section class="container section ">
+        <div class="row">
+            <div class="col s12 l6">
+                <img src="IMG/ships3.jpg" alt="" class="responsive-IMG materialboxed">
+            </div>
+            <div class="col s12 l6 scrollable-text">
+                <h2 class="white-text"><p><strong>Introducing the CosmoTech Warbird: Your Cosmic Guardian</strong></p></h2>
+                <p class="white-text">
+                    <br>
+                    <p>In the unforgiving depths of the cosmos, where the battlegrounds stretch beyond the stars, behold your unwavering cosmic guardian—the <strong>CosmoTech Warbird.</strong> Forged in the crucible of innovation by CosmoTech Innovations, this spacefaring warplane is a sentinel of unparalleled might, prepared to defend the cosmos.</p>
+                    <br>
+                    <p>As we venture into the cosmic arena, the CosmoTech Warbird stands as your vigilant protector, blending cutting-edge weaponry with unrivaled performance. It's not merely a spacecraft; it's your cosmic shield in the face of adversity.</p>
+                    <br>
+                    <p><strong>Cosmic Dominance Redefined</strong></p>
+                    <br>
+                    <p>CosmoTech Innovations understands that space is not just a frontier of discovery but also a realm of challenges. The CosmoTech Warbird is our response—a warplane engineered not only for superiority but also for adaptability. Now, you can traverse the cosmos with confidence, knowing you have the ultimate cosmic guardian at your command.</p>
+                    <br>
+                    <p><strong>Supreme Firepower</strong></p>
+                    <br>
+                    <p>Size may be relative in space, but firepower reigns supreme. The CosmoTech Warbird boasts a devastating array of advanced weaponry, state-of-the-art defense systems, and tactical maneuverability. It's your formidable enforcer in cosmic battles, ready to face any extraterrestrial threat with unwavering resolve.</p>
+                    <br>
+                    <p><strong>Cosmic Conflict Versatility</strong></p>
+                    <br>
+                    <p>Whether you're defending Earth from alien invasions or engaging in interstellar skirmishes, the CosmoTech Warbird adapts to your cosmic combat needs. With a versatile design and modular armaments, it's the warplane that can be tailored for any conflict, ensuring your supremacy in the cosmic theater of war.</p>
+                    <br>
+                    <p><strong>Join the CosmoTech Armada</strong></p>
+                    <br>
+                    <p>As you take flight into the cosmic battlegrounds, remember that you're part of the CosmoTech Armada—a vanguard of space exploration and cosmic defense. The CosmoTech Warbird is your cosmic sentinel, your vigilant guardian, and your indomitable ally in the quest for cosmic sovereignty.</p>
+                    <br>
+                    <p>So, whether you're a seasoned cosmic warrior or a fearless defender of the stars, conquer the cosmos with the CosmoTech Warbird—your cosmic guardian on this extraordinary journey through the celestial battlefield.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer scrollspy" id="Contact">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Join Now!!</h5>
+              <p class="grey-text text-lighten-4">Discover the cosmos with CosmoTech Innovations—a world leader in space exploration and innovation. From affordable, high-performance spacecraft like the CosmoTech Voyager to the formidable CosmoTech Warbird for cosmic defense, our cutting-edge technology is your gateway to limitless cosmic adventures. Join us and experience a future where the stars are just the beginning of an extraordinary journey. Dare to explore, dream, and conquer the cosmos with CosmoTech—where the universe unfolds its greatness.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a href="https://www.instagram.com/gilbertopogi123/" class="tooltipped btn-floating btn-small darken-4" data-tooltip="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+                <li><a href="https://twitter.com/Hotdog6900" class="tooltipped btn-floating btn-small darken-4" data-tooltip="Twitter">
+                    <i class="fa-brands fa-square-twitter"></i>
+                </a></li>
+                <li><a href="https://www.facebook.com/gilbertoantonio.pangilinan" class="tooltipped btn-floating btn-small darken-4" data-tooltip="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a></li>
+                <li><a href="https://www.youtube.com/channel/UCn9jd1LdDa5aCZMnaTVB1eQ" class="tooltipped btn-floating btn-small darken-4" data-tooltip="Youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2164 Copyright. Designed by <strong>CosmoTech Innovation</strong>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.scrollspy').scrollSpy();
+            $('.parallax').parallax();
+        })
+    </script>
+</body>
+</html>
